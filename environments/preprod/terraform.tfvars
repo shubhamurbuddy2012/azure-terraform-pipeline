@@ -1,6 +1,6 @@
 rgs = {
   rg1 = {
-    name     = "rg-dhondhu"
+    name     = "rg-tondu"
     location = "centralindia"
   }
 }
@@ -9,7 +9,7 @@ vnets = {
   vnet1 = {
     name                = "vnet-dhondhu"
     location            = "centralindia"
-    resource_group_name = "rg-dhondhu"
+    resource_group_name = "rg-tondu"
     address_space       = ["10.0.0.0/16"]
   }
 }
@@ -17,13 +17,13 @@ vnets = {
 snets = {
   frontend_snet = {
     name                 = "frontend-subnet"
-    resource_group_name  = "rg-dhondhu"
+    resource_group_name  = "rg-tondu"
     virtual_network_name = "vnet-dhondhu"
     address_prefixes     = ["10.0.1.0/24"]
   }
   backend_snet = {
     name                 = "backend-subnet"
-    resource_group_name  = "rg-dhondhu"
+    resource_group_name  = "rg-tondu"
     virtual_network_name = "vnet-dhondhu"
     address_prefixes     = ["10.0.2.0/24"]
   }
@@ -33,7 +33,7 @@ pips = {
   pip1 = {
     name                = "pip1"
     location            = "centralindia"
-    resource_group_name = "rg-dhondhu"
+    resource_group_name = "rg-tondu"
     allocation_method   = "Static"
   }
 }
